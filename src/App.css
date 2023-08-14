@@ -1,0 +1,110 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.App-header {
+  background-color: #2c3e50;
+  padding: 20px;
+  color: white;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.grouping-controls,
+.sorting-controls {
+  display: flex;
+  align-items: center;
+}
+
+.controls label {
+  color: #fff;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.controls select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.controls select:hover {
+  border-color: #3498db;
+  background-color: #f5f5f5;
+}
+
+.controls select:focus {
+  border-color: #3498db;
+  outline: none;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.kanban-board {
+  display: flex;
+  justify-content: space-around;
+}
+
+.group {
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  overflow: hidden;
+}
+
+.group:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.group h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+.ticket-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.ticket-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.ticket-card h3 {
+  font-size: 1.3rem;
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.ticket-card p {
+  margin: 7px 0;
+  color: #555;
+}
+
+.ticket-card p:first-of-type {
+  color: #e74c3c;
+}
